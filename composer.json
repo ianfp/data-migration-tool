@@ -8,7 +8,10 @@
         "monolog/monolog": "~1.16.0"
     },
     "autoload": {
-        "psr-4": {"Migration\\": ["src/Migration", "tests/unit/testsuite/Migration"]},
+        "psr-4": {"Migration\\": ["src/Migration"]},
         "files" : ["src/Migration/cli_commands.php", "registration.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {"Migration\\": ["tests/unit/testsuite/Migration"]}
     }
 }
